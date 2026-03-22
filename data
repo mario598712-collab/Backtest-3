@@ -1,0 +1,12 @@
+import streamlit as st
+import os
+
+# Define el nombre de la carpeta
+nombre_carpeta = "data"
+
+# Crea la carpeta si no existe
+if not os.path.exists(data):
+    os.makedirs(data)
+    st.success(f"Carpeta '{data}' creada exitosamente.")
+else:
+    st.info(f"La carpeta '{data}' ya existe.")
